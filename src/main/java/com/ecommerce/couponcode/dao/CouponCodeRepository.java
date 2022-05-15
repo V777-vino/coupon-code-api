@@ -8,9 +8,6 @@ import com.ecommerce.couponcode.model.Coupon;
 @Repository
 public interface CouponCodeRepository extends JpaRepository<Coupon, Integer> {
 
-	static void findByCode(String couponCode) {
-		// TODO Auto-generated method stub
-		
-	}
+	Coupon findByCouponCode(String code);
 
 }
