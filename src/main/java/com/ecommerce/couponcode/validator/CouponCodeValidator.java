@@ -17,14 +17,14 @@ public class CouponCodeValidator {
 		LocalDate endDate = coupon.getEndDate();
 
 		if (LocalDate.now().isBefore(startDate)) {
-			throw new Exception("wait for a day");
+			throw new Exception("coupon not available");
 		}
 //		} else if (LocalDate.now().isBefore(endDate)) {
 //
 //		}
 		else if (LocalDate.now().isAfter(endDate)) {
 
-			throw new Exception("Expired");
+			throw new Exception("coupon Expired");
 		}
 //		} else if (LocalDate.now().isEqual(endDate)) {
 //

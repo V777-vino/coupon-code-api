@@ -30,7 +30,7 @@ public class CouponController {
 			Message message = new Message(e.getMessage());
 			return new ResponseEntity<>(message, HttpStatus.BAD_REQUEST);
 		}
-		return new ResponseEntity<>(coupon, HttpStatus.OK);
+		return new ResponseEntity<>(coupon.getDiscountInPercentage(), HttpStatus.OK);
 //		if (couponCode == coupon.getCouponCode()) {
 //			return new ResponseEntity<>(coupon.getDiscountInPercentage(), HttpStatus.OK);
 //		}
