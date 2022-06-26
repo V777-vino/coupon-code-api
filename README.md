@@ -19,4 +19,11 @@ Run mvn build to build the project. The build artifacts will be stored in the .m
 
 ## Features
 
-*
+* Add coupon
+* Delete coupon
+* Edit coupon
+* List coupon
+
+##Test
+
+* To handled all the exceptions
